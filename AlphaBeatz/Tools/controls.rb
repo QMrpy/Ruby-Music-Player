@@ -1,4 +1,7 @@
 require 'tk'
+require_relative "player"
+require_relative "ListPanel"
+require_relative "DisplayPanel"
 class Controls
     attr_accessor :root,:status,:playervolume,:playing,:player,:songtime,:volume_label
     def initialize(root, playing, player, volume)
@@ -207,7 +210,7 @@ class Controls
     end
 end
         
-class Main
+class MainCon
     def initialize(root)
         @root=TkFrame.new(root){
             pack('side'=>'top')

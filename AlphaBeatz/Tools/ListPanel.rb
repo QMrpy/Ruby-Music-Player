@@ -128,7 +128,7 @@ class ListPanel
                     self.update_list_box_songs(dirs=path)
             end
     end
-    
+end
     
 class Main
     def init(root, var1)
@@ -187,6 +187,6 @@ if __FILE__==$0
         textvariable var1
         pack(side='top')
     }   
-    main.new(root,var1)
+    Main.new(root,var1)
     Tk.mainloop()
 end
